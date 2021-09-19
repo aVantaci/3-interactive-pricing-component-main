@@ -1,0 +1,27 @@
+@import '_variables'
+
+.slider-bar
+    -webkit-appearance: none
+    height: 9px
+    border-radius: 5px
+    background: $colorEmptySliderBar
+    display: block
+    width: 85%
+    margin: 40px auto
+    &::-webkit-slider-thumb
+        -webkit-appearance: none
+        appearance: none
+        width: 40px
+        height: 40px
+        border-radius: 50%
+        background: url(../images/icon-slider.svg) $colorSliderBackground 55% center no-repeat
+        box-shadow: 0 10px 15px 5px $colorFullSliderBar
+        cursor: grab
+        outline: none
+    &::-moz-range-thumb
+        width: 40px
+        height: 40px
+        border-radius: 50%
+        background: url(../images/icon-slider.svg) $colorSliderBackground 55% center no-repeat
+        cursor: grab
+        outline: none

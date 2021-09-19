@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap");
+.slider-bar {
+  -webkit-appearance: none;
+  height: 9px;
+  border-radius: 5px;
+  background: #eaeefb;
+  display: block;
+  width: 85%;
+  margin: 40px auto;
+}
+
+.slider-bar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: url(../images/icon-slider.svg) #10d5c2 55% center no-repeat;
+  -webkit-box-shadow: 0 10px 15px 5px #a5f3eb;
+          box-shadow: 0 10px 15px 5px #a5f3eb;
+  cursor: -webkit-grab;
+  cursor: grab;
+  outline: none;
+}
+
+.slider-bar::-moz-range-thumb {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: url(../images/icon-slider.svg) #10d5c2 55% center no-repeat;
+  cursor: grab;
+  outline: none;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 44px;
+  height: 22px;
+  margin: 30px 10px;
+  vertical-align: 1px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.switch input:checked + .slider {
+  background-color: #a5f3eb;
+}
+
+.switch input:focus + .slider {
+  -webkit-box-shadow: 0 0 1px #a5f3eb;
+          box-shadow: 0 0 1px #a5f3eb;
+}
+
+.switch input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  transform: translateX(20px);
+}
+
+.switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #cdd7ee;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.switch .slider::before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.switch .slider.round {
+  border-radius: 34px;
+}
+
+.switch .slider.round::before {
+  border-radius: 50%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fafbff;
+}
+
+body * {
+  font-family: 'Manrope', sans-serif;
+  font-size: 13px;
+  color: #858fad;
+}
+
+img {
+  position: absolute;
+}
+
+img.one {
+  width: 100%;
+  min-height: 275px;
+  height: 40%;
+}
+
+img.two {
+  top: 130px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+header {
+  text-align: center;
+  top: 130px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+  width: 100%;
+}
+
+header h1 {
+  font-size: 20px;
+  color: #293356;
+}
+
+header p {
+  width: 48%;
+  margin: auto;
+  padding-top: 10px;
+  line-height: 22px;
+}
+
+div.wrapper {
+  width: 87%;
+  background-color: white;
+  -webkit-box-shadow: 0px 5px 10px 0px #ddd;
+          box-shadow: 0px 5px 10px 0px #ddd;
+  border-radius: 10px;
+  position: absolute;
+  top: 240px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  max-width: 400px;
+}
+
+div.wrapper section.one {
+  border-bottom: 1px #eaeefb solid;
+}
+
+div.wrapper section.one p {
+  text-align: center;
+}
+
+div.wrapper section.one p.views {
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 1px;
+  padding-top: 35px;
+}
+
+div.wrapper section.one p.cost span {
+  font-size: 30px;
+  font-weight: 800;
+  color: #293356;
+  vertical-align: -6px;
+}
+
+div.wrapper section.one div.billing {
+  text-align: center;
+  position: relative;
+  padding-right: 10px;
+}
+
+div.wrapper section.one div.billing p {
+  display: inline-block;
+  font-size: 12px;
+}
+
+div.wrapper section.one div.billing p:nth-of-type(3) {
+  font-size: 10px;
+  color: #ff8c66;
+  background: #ffece6;
+  padding: 3px 7px;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+div.wrapper section.two {
+  text-align: center;
+}
+
+div.wrapper section.two ul.pros {
+  padding: 30px;
+}
+
+div.wrapper section.two ul.pros li {
+  list-style: none;
+}
+
+div.wrapper section.two ul.pros li::before {
+  content: url(../images/icon-check.svg);
+  padding-right: 14px;
+}
+
+div.wrapper section.two ul.pros li:nth-of-type(2) {
+  padding: 10px 0;
+}
+
+div.wrapper section.two button {
+  background-color: #293356;
+  color: #bdccff;
+  border: none;
+  padding: 12px 42px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  font-weight: 800;
+}
+/*# sourceMappingURL=style.css.map */

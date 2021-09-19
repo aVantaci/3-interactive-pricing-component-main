@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+      width: 100%;
+      /* padding: 10px 0; */
+      position: absolute;
+      top: 790px;
+    }
+
+    .attribution a {
+      font-size: 11px;
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <img class='one' src="./images/bg-pattern.svg" alt="">
+  <img class='two' src="./images/pattern-circles.svg" alt="">
+  <header>
+    <h1>Simple, traffic-based pricing</h1>
+    <p>Sign-up for our 30-day trial. No credit card required.</p>
+  </header>
+
+  <div class="wrapper">
+    <section class="one">
+      <p class="views">
+        <span>100k</span>
+        Pageviews
+      </p>
+      <input type="range" min="1" max="5" value="3" class="slider-bar" id="myRange">
+      <p class="cost">
+        <span>$16.00</span>
+        /month
+      </p>
+
+      <div class="billing">
+        <p>Monthly Billing</p>
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
+        <p>Yearly Billing</p>
+        <p>-25%</p>
+      </div>
+    </section>
+
+    <section class="two">
+      <ul class="pros">
+        <li>Unlimited websites</li>
+        <li>100% data ownership</li>
+        <li>Email reports</li>
+      </ul>
+      <button>Start my triall</button>
+    </section>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/aVantaci?tab=repositories">aVantaci</a>.
+  </div>
+</body>
+
+</html>
