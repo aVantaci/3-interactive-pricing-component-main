@@ -32,6 +32,24 @@
   outline: none;
 }
 
+@media only screen and (min-width: 1440px) {
+  .slider-bar {
+    height: 11px;
+    margin: 70px auto 40px;
+  }
+  .slider-bar::-webkit-slider-thumb {
+    width: 50px;
+    height: 50px;
+    -webkit-box-shadow: 0 20px 25px 5px #a5f3eb;
+            box-shadow: 0 20px 25px 5px #a5f3eb;
+  }
+  .slider-bar::-moz-range-thumb {
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 20px 25px 5px #a5f3eb;
+  }
+}
+
 .switch {
   position: relative;
   display: inline-block;
@@ -57,7 +75,7 @@
 }
 
 .switch input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
+  -webkit-transform: translateX(20px);
   transform: translateX(20px);
 }
 
@@ -91,6 +109,22 @@
 
 .switch .slider.round::before {
   border-radius: 50%;
+}
+
+@media only screen and (min-width: 1440px) {
+  .switch {
+    width: 54px;
+    height: 26px;
+    margin: 30px 20px;
+  }
+  .switch input:checked + .slider:before {
+    -webkit-transform: translateX(28px);
+    transform: translateX(28px);
+  }
+  .switch .slider::before {
+    height: 18px;
+    width: 18px;
+  }
 }
 
 * {
@@ -158,12 +192,7 @@ div.wrapper {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  max-width: 400px;
+  max-width: 670px;
 }
 
 div.wrapper section.one {
@@ -185,6 +214,7 @@ div.wrapper section.one p.cost span {
   font-size: 30px;
   font-weight: 800;
   color: #293356;
+  padding-right: 5px;
   vertical-align: -6px;
 }
 
@@ -207,7 +237,7 @@ div.wrapper section.one div.billing p:nth-of-type(3) {
   border-radius: 10px;
   position: absolute;
   top: 50%;
-  right: 10px;
+  margin-left: 8px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
@@ -241,5 +271,83 @@ div.wrapper section.two button {
   border-radius: 20px;
   margin-bottom: 30px;
   font-weight: 800;
+}
+
+@media only screen and (min-width: 1440px) {
+  body * {
+    font-size: 15px;
+  }
+  img.one {
+    height: 60%;
+  }
+  img.two {
+    top: 170px;
+    height: 170px;
+  }
+  header {
+    top: 170px;
+  }
+  header h1 {
+    font-size: 35px;
+  }
+  header p {
+    width: 100%;
+    font-size: 19px;
+    padding-top: 14px;
+  }
+  div.wrapper {
+    -webkit-box-shadow: 0px 15px 30px 5px #ddd;
+            box-shadow: 0px 15px 30px 5px #ddd;
+    top: 330px;
+  }
+  div.wrapper section.one p.views {
+    padding: 75px 0 0 7.5%;
+    text-align: left;
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
+  div.wrapper section.one p.views span {
+    font-size: 18px;
+  }
+  div.wrapper section.one p.cost {
+    position: absolute;
+    right: 7.5%;
+    top: 50px;
+    font-size: 18px;
+  }
+  div.wrapper section.one p.cost span {
+    font-size: 50px;
+    vertical-align: -11px;
+  }
+  div.wrapper section.one div.billing {
+    margin-bottom: 20px;
+  }
+  div.wrapper section.one div.billing p {
+    font-size: 15px;
+  }
+  div.wrapper section.one div.billing p:nth-of-type(3) {
+    font-size: 12px;
+  }
+  div.wrapper section.two {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  div.wrapper section.two ul.pros {
+    width: 47%;
+    text-align: left;
+    padding: 40px;
+  }
+  div.wrapper section.two ul.pros li {
+    margin-left: 20px;
+  }
+  div.wrapper section.two button {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin: 0;
+    padding: 15px 55px;
+    border-radius: 25px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

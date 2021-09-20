@@ -25,3 +25,16 @@
         background: url(../images/icon-slider.svg) $colorSliderBackground 55% center no-repeat
         cursor: grab
         outline: none
+
+@media only screen and (min-width: 1440px)
+    .slider-bar
+        height: 11px
+        margin: 70px auto 40px
+        &::-webkit-slider-thumb
+            width: 50px
+            height: 50px
+            box-shadow: 0 20px 25px 5px $colorFullSliderBar
+        &::-moz-range-thumb
+            width: 50px
+            height: 50px
+            box-shadow: 0 20px 25px 5px $colorFullSliderBar

@@ -16,14 +16,20 @@
       font-size: 11px;
       text-align: center;
       width: 100%;
-      /* padding: 10px 0; */
+      padding: 10px 0;
       position: absolute;
-      top: 790px;
+      top: 750px;
     }
 
     .attribution a {
       font-size: 11px;
       color: hsl(228, 45%, 44%);
+    }
+
+    @media only screen and (min-width: 1440px) {
+      .attribution {
+        top: 900px
+      }
     }
   </style>
 </head>
@@ -45,7 +51,7 @@
       <input type="range" min="1" max="5" value="3" class="slider-bar" id="myRange">
       <p class="cost">
         <span>$16.00</span>
-        /month
+        / month
       </p>
 
       <div class="billing">

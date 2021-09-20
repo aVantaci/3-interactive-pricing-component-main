@@ -16,8 +16,8 @@
         &:focus + .slider
             box-shadow: 0 0 1px $colorFullSliderBar
         &:checked + .slider:before
-            -webkit-transform: translateX(26px)
-            -ms-transform: translateX(26px)
+            -webkit-transform: translateX(20px)
+            -ms-transform: translateX(20px)
             transform: translateX(20px)
     .slider
         position: absolute
@@ -43,3 +43,18 @@
             border-radius: 34px
             &::before
                 border-radius: 50%
+
+@media only screen and (min-width: 1440px)
+    .switch
+        width: 54px
+        height: 26px
+        margin: 30px 20px
+        input
+            &:checked + .slider:before
+                -webkit-transform: translateX(28px)
+                -ms-transform: translateX(28px)
+                transform: translateX(28px)
+        .slider
+            &::before
+                height: 18px
+                width: 18px

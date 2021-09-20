@@ -47,9 +47,7 @@ div.wrapper
     top: 240px
     left: 50%
     transform: translateX(-50%)
-    align-self: center
-    justify-self: center
-    max-width: 400px
+    max-width: 670px
     section.one
         border-bottom: 1px $colorEmptySliderBar solid
         p
@@ -64,6 +62,7 @@ div.wrapper
                     font-size: 30px
                     font-weight: 800
                     color: $colorTextAndCtaBackground
+                    padding-right: 5px
                     vertical-align: -6px
         div.billing
             text-align: center
@@ -80,7 +79,7 @@ div.wrapper
                     border-radius: 10px
                     position: absolute
                     top: 50%
-                    right: 10px
+                    margin-left: 8px
                     transform: translateY(-50%)
 
     section.two
@@ -102,3 +101,61 @@ div.wrapper
             border-radius: 20px
             margin-bottom: 30px
             font-weight: 800
+
+@media only screen and (min-width: 1440px)
+    body
+        *
+            font-size: 15px
+    img
+        &.one
+            height: 60%
+        &.two
+            top: 170px
+            height: 170px
+    header
+        top: 170px
+        h1
+            font-size: 35px
+        p
+            width: 100%
+            font-size: 19px
+            padding-top: 14px
+    div.wrapper
+        box-shadow: 0px 15px 30px 5px #ddd
+        top: 330px
+        section.one
+            p
+                &.views
+                    padding: 75px 0 0 7.5%
+                    text-align: left
+                    font-size: 18px
+                    letter-spacing: 2px
+                    span
+                        font-size: 18px
+                &.cost
+                    position: absolute
+                    right: 7.5%
+                    top: 50px
+                    font-size: 18px
+                    span
+                        font-size: 50px
+                        vertical-align: -11px
+            div.billing
+                margin-bottom: 20px
+                p
+                    font-size: 15px
+                    &:nth-of-type(3)
+                        font-size: 12px
+        section.two
+            display: flex
+            ul.pros
+                width: 47%
+                text-align: left
+                padding: 40px
+                li
+                    margin-left: 20px
+            button
+                align-self: center
+                margin: 0
+                padding: 15px 55px
+                border-radius: 25px
