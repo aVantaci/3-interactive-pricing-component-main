@@ -4,7 +4,7 @@
     -webkit-appearance: none
     height: 9px
     border-radius: 5px
-    background: $colorEmptySliderBar
+    background: linear-gradient(90deg,$colorFullSliderBar 50%,$colorEmptySliderBar 50%)
     display: block
     width: 85%
     margin: 40px auto
@@ -23,8 +23,9 @@
         height: 40px
         border-radius: 50%
         background: url(../images/icon-slider.svg) $colorSliderBackground 55% center no-repeat
+        box-shadow: 0 10px 15px 5px $colorFullSliderBar
         cursor: grab
-        outline: none
+        border: none
 
 @media only screen and (min-width: 1440px)
     .slider-bar
@@ -34,7 +35,19 @@
             width: 50px
             height: 50px
             box-shadow: 0 20px 25px 5px $colorFullSliderBar
+            transition: .3s
+            &:hover
+                background: url(../images/icon-slider.svg) hsl(174, 76%, 60%) 55% center no-repeat
+            &:active
+                cursor: grabbing
+                background: url(../images/icon-slider.svg) hsl(174, 96%, 30%) 55% center no-repeat
         &::-moz-range-thumb
             width: 50px
             height: 50px
             box-shadow: 0 20px 25px 5px $colorFullSliderBar
+            transition: .3s
+            &:hover
+                background: url(../images/icon-slider.svg) hsl(174, 76%, 60%) 55% center no-repeat
+            &:active
+                cursor: grabbing
+                background: url(../images/icon-slider.svg) hsl(174, 96%, 30%) 55% center no-repeat
