@@ -50,7 +50,6 @@ Users should be able to:
 
 ```js
 slider.oninput = sliderMechanism
-}
 ```
 
 ### Continued development
@@ -59,7 +58,7 @@ At this moment nothing special is on my mind. This project wasn't problematic at
 
 ## Author
 
-- Frontend Mentor - [@aVantaci]https://www.frontendmentor.io/profile/aVantaci
+- Frontend Mentor - [@aVantaci](https://www.frontendmentor.io/profile/aVantaci)
 
 
 
