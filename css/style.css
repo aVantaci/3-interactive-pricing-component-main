@@ -16,7 +16,11 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: url(../images/icon-slider.svg) #10d5c2 55% center no-repeat;
+  background-image: url(../images/icon-slider.svg);
+  background-color: #10d5c2;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;
   -webkit-box-shadow: 0 10px 15px 5px #a5f3eb;
           box-shadow: 0 10px 15px 5px #a5f3eb;
   cursor: -webkit-grab;
@@ -28,7 +32,11 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: url(../images/icon-slider.svg) #10d5c2 55% center no-repeat;
+  background-image: url(../images/icon-slider.svg);
+  background-color: #10d5c2;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;
   box-shadow: 0 10px 15px 5px #a5f3eb;
   cursor: grab;
   border: none;
@@ -48,12 +56,12 @@
     transition: .3s;
   }
   .slider-bar::-webkit-slider-thumb:hover {
-    background: url(../images/icon-slider.svg) #4be7d7 55% center no-repeat;
+    background-color: #4be7d7;
   }
   .slider-bar::-webkit-slider-thumb:active {
     cursor: -webkit-grabbing;
     cursor: grabbing;
-    background: url(../images/icon-slider.svg) #039687 55% center no-repeat;
+    background-color: #039687;
   }
   .slider-bar::-moz-range-thumb {
     width: 50px;
@@ -291,6 +299,12 @@ div.wrapper section.two button {
   border-radius: 20px;
   margin-bottom: 30px;
   font-weight: 800;
+}
+
+@media only screen and (max-width: 375px) {
+  div.wrapper section.one div.billing p:nth-of-type(3) {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
